@@ -4,31 +4,14 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta
-		name="viewport"
-		content="width=device-width, initial-scale=1.0"
-	/>
-	<meta
-		http-equiv="X-UA-Compatible"
-		content="ie=edge"
-	/>
-	<link
-		rel="stylesheet"
-		href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-		crossorigin="anonymous"
-	/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	<link
-		rel="stylesheet"
-		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-		integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-		crossorigin="anonymous"
-	/>
-	<link
-		rel="stylesheet"
-		href="css/style.css"
-	/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+		integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/appStyle.css" />
 
 	<!-- Change this to the title of your portfolio -->
 	<title>Portfolio Template</title>
@@ -36,468 +19,658 @@
 
 <body>
 
-	<!-- Navbar -->
-	<nav class="navbar navbar-dark navbar-color">
-		<div class="container home-proj-deck">
-			<a
-				class="navbar-brand"
-				href="/"
-			>(Your Name Here)</a>
-			<ul class="navbar-nav ml-auto">
-				<li>
-					<div class='text-center'>
-						<!--Change these to links to your linkedin profile and your github profile-->
-						<a
-							href="https://www.linkedin.com"
-							target="_blank"
-							class="text-white px-2"
-						>
-							<i class="fab fa-linkedin"></i>
-						</a>
-						<a
-							href="https://github.com"
-							target="_blank"
-							class="text-white px-2"
-						>
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</li>
-			</ul>
+	<!--removal-tag-start-->
+	<sidebar id='sidebar' style="width: 200px; border:none; border-right:1px solid black">
+		<div id='keepwhenclosed'>
+			<!-- <button id='collapse' class="btn" style="z-index: 999; writing-mode: tb-rl">
+				Menu
+			</button> -->
 		</div>
-	</nav>
+		<div id='dontkeepwhenclosed'>
+			<a href="https://codeportfolio.io" target="_blank"> 
+				<img src="logo.PNG" style="width:45px; margin:7px; margin-bottom: 20px" /><span
+					style="color: black">codeportfolio.io</span>
+			</a>
 
-	<!-- Headshot Photo and Text -->
-	<section
-		id="home-headshot"
-		class="p5"
-	>
-		<!--Change Profile.jpg to your best headshot-->
-		<!--Don't like round? Mix it up by using css.-->
-		<img
-			src="./img/Profile.jpg"
-			class="img-fluid rounded-circle headshot-img"
-		/>
-	</section>
-	<section
-		id="home-headshot-text"
-		class="p5"
-	>
-		<h1>Hello.</h1>
-		<p>Who the heck are you? <br> A snappy one or two line description of who you are. <a
-				href='https://codeportfolio.io/blog/describing-yourself'
-			>Need Inspiration?</a>
-		</p>
-	</section>
+			<button id='saveBtn' class="btn btn-primary" style="z-index:999; margin:7px; width: 183px">Publish</button>
 
-	<!-- Text and iframe for showcase project -->
-	<section
-		id="home-game-text"
-		class="p5"
-	>
-		<h1>Hey, try this!</h1>
-		<p>
-			Make something cute that fits in a small iframe, like the game below.
-			<br>
-			Need ideas for projects like this? <a href="https://codeportfolio.io/blog/small-project-ideas">click
-				here!</a>
-		</p>
-		<br>
-	</section>
-	<section id="home-game">
-		<!--Get a link to your own showcase project in there!-->
-		<iframe
-			width="300"
-			height="300"
-			src="https://derickthomas.pythonanywhere.com/tool/Node_Knot.html"
-			style="border:0; margin: 0; position: absolute; top: 150px; left: 50%; transform: translate(-50%, -50%); touch-action: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;"
-		>
-		</iframe>
-	</section>
-
-	<!-- Project Gallery -->
-	<section id="home-projects">
-		<div class="container home-proj-deck">
-			<h1 class="m-0">Projects</h1>
-			Showcase a few of your best code projects below. A good looking thumbnail and catchy description will go a
-			long way towards getting recruiters to want to learn more.
-			The cards link to detailed project descriptions.
-			Click <a href='https://codeportfolio.io/project-ideas'>here</a> for project ideas!
-			<br>
-			<br>
-			<div class="card-deck">
-				<div class="card card-proj">
-					<!-- Change the below link to the link to your project page -->
-					<a href='./project.html'>
-						<img
-							class="card-img-top project-thumb"
-							src="./img/Project_Thumb_1.PNG"
-							alt="Card image cap"
-						/>
-						<div class="card-body card-proj">
-							<h5 class="card-title">Project Title</h5>
-							<p class="card-text">
-								A snappy one or two sentence description of this project should go here. Say why you
-								made it,
-								what it does, how many people use it, ect.
-							</p>
-							<span><strong>List the technologies you used for this project here.</strong></span>
-						</div>
-					</a>
+			<div id='colors' style="margin:7px; border-radius: 5px;  padding:5px; background-color: #dedede">
+				<div style="width: 100%;text-align: center; font-size: 1rem;">Color Selection</div>
+				<div>
+					<input type="color" id="navbar-background" name="navbar-background" value="#3f3b3f">
+					<label for="navbar-background" style="font-size: 1rem;">Navbar</label>
 				</div>
-				<!-- Change the below link to the link to your project page -->
-				<div class="card card-proj">
-					<a href='./project.html'>
-						<img
-							class="card-img-top project-thumb"
-							src="./img/Project_Thumb_2.PNG"
-							alt="Card image cap"
-						/>
-						<div class="card-body card-proj">
-							<h5 class="card-title">Project Title</h5>
-							<p class="card-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna
-								aliqua incididunt ut labore.
-							</p>
-							<span><strong>Befunge, FRACTRAN, GolfScript, Piet, Unlambda, Whitespace,
-									Shakespeare</strong></span>
-						</div>
-					</a>
+				<div>
+					<input type="color" id="navbar-text" name="navbar-text" value="#FFFFFF">
+					<label for="navbar-text" style="font-size: 1rem;">Navbar Text</label>
 				</div>
-
+				<div>
+					<input type="color" id="background-1" name="background-1" value="#FFFFFF">
+					<label for="background-1" style="font-size: 1rem;">Background 1</label>
+				</div>
+				<div>
+					<input type="color" id="background-2" name="background-2" value="#dedede">
+					<label for="background-2" style="font-size: 1rem;">Background 2</label>
+				</div>
+				<div>
+					<input type="color" id="projects" name="projects" value="#dedede">
+					<label for="projects" style="font-size: 1rem;">Projects</label>
+				</div>
 			</div>
-			<div class='card-deck mt-3'>
-				<!-- Change the below link to the link to your project page -->
-				<div class="card card-proj">
-					<a href='./project.html'>
-						<img
-							class="card-img-top project-thumb"
-							src="./img/Project_Thumb_3.PNG"
-							alt="Card image cap"
-						/>
-						<div class="card-body card-proj">
-							<h5 class="card-title">Project Title</h5>
-							<p class="card-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna
-								aliqua incididunt ut labore.
-							</p>
-							<span><strong>Befunge, FRACTRAN, GolfScript, Piet, Unlambda, Whitespace,
-									Shakespeare</strong></span>
-						</div>
-					</a>
-				</div>
-				<!-- Change the below link to the link to your project page -->
-				<div class="card card-proj">
-					<a href='./project.html'>
-						<img
-							class="card-img-top project-thumb"
-							src="./img/Project_Thumb_4.PNG"
-							alt="Card image cap"
-						/>
-						<div class="card-body card-proj">
-							<h5 class="card-title">Project Title</h5>
-							<p class="card-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna
-								aliqua incididunt ut labore.
-							</p>
-							<span><strong>Befunge, FRACTRAN, GolfScript, Piet, Unlambda, Whitespace,
-									Shakespeare</strong></span>
-						</div>
-					</a>
-				</div>
-
+			<!-- <div style="font-size:10pt; text-align: center;">
+				Published URL:codeportfolio.io/
 			</div>
-			<div class="card-deck">
-			</div>
-	</section>
+			<div style="font-size:10pt; text-align: center;">
+				derickthomas
+			</div> -->
+		</div>
+		<style>
+			.content {
+				margin-left: 200px;
+			}
+		</style>
+	</sidebar>
+	<!--removal-tag-end-->
 
-	<!-- Career Section -->
-	<section id="home-career">
-		<div class="container home-proj-deck">
-			<h1 style='text-align: center'>Professional Experience</h1>
-			<p style='text-align: center'>
-				Tell the stories of a couple times you really nailed it. Use numbers in your story to show the
-				value you delivered. Click <a href='https://codeportfolio.io/blog/writing-case-studies'>here</a> for help
-				with this section.
+	<div id='content' class='content'>
+
+		<!-- Navbar -->
+		<nav id='navbar' class="navbar navbar-dark navbar-color">
+			<div class="container home-proj-deck">
+				<a contenteditable="true" id="name-field" class="navbar-brand" href="/">(Your Name Here)</a>
+				<ul class="navbar-nav ml-auto">
+					<li>
+						<div class='text-center'>
+							<!--Change these to links to your linkedin profile and your github profile-->
+							<a id='linkedInIcon' href="noaddress" target="_blank" class="text-white px-2">
+								<i id="linkedin-nav" class="fab fa-linkedin"></i>
+							</a>
+							<a id='githubIcon' href="noaddress" target="_blank" class="text-white px-2">
+								<i id="github-nav" class="fab fa-github"></i>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="card edit-modal" id='editModal'>
+			<form>
+				<div class='card container max-form-width pb-3'>
+
+				</div>
+			</form>
+		</div>
+
+
+		<!-- Headshot Photo and Text -->
+		<div id='block-0'>
+			<section id="home-headshot" class="p5">
+				<!--Change Profile.jpg to your best headshot-->
+				<!--Don't like round? Mix it up by using css.-->
 				<br>
-			<div
-				class="card my-4 card-no-hover"
-				style="width: 100%;"
-			>
-				<div class="card-body">
-					<h3 class="card-title">Project Title</h3>
-					<h5>Company Name</h5>
-					<img
-						src='./img/electronics.jpg'
-						style='max-height:400px; max-width: 100%'
-						class='float-right ml-3 mb-3'
-					>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
+				<img id='p1' src="https://codeportfolio-user-uploads.s3.amazonaws.com/user.PNG" class="img-fluid rounded-circle headshot-img" />
+			</section>
+			<section id="home-headshot-text" class="p5">
+				<br>
+				<h1 contenteditable="true">Hello.</h1>
+				<p contenteditable="true">Who the heck are you? <br> A snappy one or two line description of who you
+					are. <a href='https://codeportfolio.io/blog/describing-yourself'>Need Inspiration?</a>
+				</p>
+			</section>
+			<button id='new-section-section-0' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 10px; z-index: 998;'>Add Section</button>
+			<span id='new-span-section-0'
+				style='position: absolute; margin-left: 10px; margin-top: 60px; z-index: 998; background-color: white; border-radius: 5px; border:1px solid black; padding:10px; display:none'>Select
+				a Section Type:</span>
+			<button id='add-projects-section-0' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 120px; z-index: 998; display:none'>Project</button>
+			<button id='add-showcase-section-0' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 160px; z-index: 998; display:none'>Showcase</button>
+			<button id='add-about-section-0' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 200px; z-index: 998; display:none'>About
+				Me</button>
+			<button id='add-experience-section-0' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 240px; z-index: 998; display:none'>Experience</button>
+			<button id='add-quote-section-0' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 280px; z-index: 998; display:none'>Quotes</button>
+		</div>
+
+		<!-- Text and iframe for showcase project -->
+		<div id='block-1' sytle="position:relative">
+
+			<button id='remove-section-1' class='btn btn-secondary'
+				style="position:absolute; right:10px; width:40px; margin-top:10px; z-index: 998;">X</button>
+			<button id='up-section-1' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:50px; z-index: 998;">▲</button>
+			<button id='down-section-1' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:90px; z-index: 998;">▼</button>
+			<button id='iframeLinkChange' class="btn btn-primary" style="position:absolute; right:53px; margin-top:10px; z-index: 998;">Change Project</button>
+
+			<section id="home-game-text" class="p5">
+				<h1 contenteditable="true">Hey, try this!</h1>
+				<p contenteditable="true">
+					Make something cute that fits in a small iframe, like the game below.
+					<br>
+					Need ideas for projects like this? <a href="https://codeportfolio.io/blog/small-project-ideas">click
+						here!</a>
+				</p>
+			</section>
+			<section id="home-game">
+				<!--Get a link to your own showcase project in there!-->
+				<iframe id='showcase' width="300" height="300"
+					src="https://www.codeportfolio.io/filler-showcase.html"
+					style="border:0; margin: 0; position: absolute; top: 150px; left: 50%; transform: translate(-50%, -50%); touch-action: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				</iframe>
+			</section>
+			<button id='new-section-section-1' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 10px; z-index: 998;'>Add Section</button>
+			<span id='new-span-section-1'
+				style='position: absolute; margin-left: 10px; margin-top: 60px; z-index: 998; background-color: white; border-radius: 5px; border:1px solid black; padding:10px; display:none'>Select
+				a Section Type:</span>
+			<button id='add-projects-section-1' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 120px; z-index: 998; display:none'>Project</button>
+			<button id='add-showcase-section-1' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 160px; z-index: 998; display:none'>Showcase</button>
+			<button id='add-about-section-1' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 200px; z-index: 998; display:none'>About
+				Me</button>
+			<button id='add-experience-section-1' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 240px; z-index: 998; display:none'>Experience</button>
+			<button id='add-quote-section-1' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 280px; z-index: 998; display:none'>Quotes</button>
+		</div>
+
+		<!-- Project Gallery -->
+		<div id='block-2'>
+			<button id='remove-section-2' class='btn btn-secondary'
+				style="position:absolute; right:10px; width:40px; margin-top:10px; z-index: 998;">X</button>
+			<button id='up-section-2' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:50px; z-index: 998;">▲</button>
+			<button id='down-section-2' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:90px; z-index: 998;">▼</button>
+			<section id="home-projects">
+				<div class="container home-proj-deck">
+					<h1 class="m-0" contenteditable="true">Projects</h1>
+					<p contenteditable="true">
+						Showcase a few of your best code projects below. A good looking thumbnail and catchy description
+						will go
+						a
+						long way towards getting recruiters to want to learn more.
+						The cards link to detailed project descriptions.
+						Click <a href='https://codeportfolio.io/project-ideas'>here</a> for project ideas!
 					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
-					</p>
+					<br>
+					<div class="card-deck">
+						<div class="card card-proj" id="project-1">
+							<button id='remove-project-1' class='btn btn-secondary'
+								style="position:absolute; margin-top: 10px; margin-right: 10px; right:0px; width:40px; z-index: 999;">x</button>
+							<button id='add-project-1' class='btn btn-primary'
+								style="position:absolute; margin-top: 10px; right:55px; width:40px; z-index: 999;">+</button>
+							<!-- Change the below link to the link to your project page -->
+							<!-- <a href='./project.html'> -->
+							<img class="card-img-top project-thumb" src="https://codeportfolio-user-uploads.s3.amazonaws.com/project.png" alt="Card image cap"
+								id="p2" />
+							<div class="card-body card-proj">
+								<h5 class="card-title" contenteditable="true">Project Title</h5>
+								<p class="card-text" contenteditable="true">
+									A snappy one or two sentence description of this project should go here. Say why you
+									made it,
+									what it does, how many people use it, ect.
+								</p>
+								<span contenteditable="true"><strong>List the technologies you used for this project
+										here.</strong></span>
+							</div>
+							<!-- </a> -->
+						</div>
+						<!-- Change the below link to the link to your project page -->
+						<div class="card card-proj" id="project-2">
+							<button id='remove-project-2' class='btn btn-secondary'
+								style="position:absolute; margin-top: 10px; margin-right: 10px; right:0px; width:40px; z-index: 999;">x</button>
+							<button id='add-project-2' class='btn btn-primary'
+								style="position:absolute; margin-top: 10px; right:55px; width:40px; z-index: 999;">+</button>
+							<!-- <a href='./project.html'> -->
+							<img class="card-img-top project-thumb" src="https://codeportfolio-user-uploads.s3.amazonaws.com/project.png" alt="Card image cap"
+								id="p3" />
+							<div class="card-body card-proj">
+								<h5 class="card-title" contenteditable="true">Project Title</h5>
+								<p class="card-text" contenteditable="true">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna
+									aliqua incididunt ut labore.
+								</p>
+								<span contenteditable="true"><strong>Befunge, FRACTRAN, GolfScript, Piet, Unlambda,
+										Whitespace,
+										Shakespeare</strong></span>
+							</div>
+							<!-- </a> -->
+						</div>
+					</div>
+
+					<div class='card-deck mt-3'>
+						<!-- Change the below link to the link to your project page -->
+						<div class="card card-proj" id="project-3">
+							<button id='remove-project-3' class='btn btn-secondary'
+								style="position:absolute; margin-top: 10px; margin-right: 10px; right:0px; width:40px; z-index: 999;">x</button>
+							<button id='add-project-3' class='btn btn-primary'
+								style="position:absolute; margin-top: 10px; right:55px; width:40px; z-index: 999;">+</button>
+							<!-- <a href='./project.html'> -->
+							<img class="card-img-top project-thumb" src="https://codeportfolio-user-uploads.s3.amazonaws.com/project.png" alt="Card image cap"
+								id="p4" />
+							<div class="card-body card-proj">
+								<h5 class="card-title" contenteditable="true">Project Title</h5>
+								<p class="card-text" contenteditable="true">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna
+									aliqua incididunt ut labore.
+								</p>
+								<span contenteditable="true"><strong>Befunge, FRACTRAN, GolfScript, Piet, Unlambda,
+										Whitespace,
+										Shakespeare</strong></span>
+							</div>
+							<!-- </a> -->
+						</div>
+						<!-- Change the below link to the link to your project page -->
+						<div class="card card-proj" id="project-4">
+							<!-- <a href='./project.html'> -->
+							<button id='remove-project-4' class='btn btn-secondary'
+								style="position:absolute; margin-top: 10px; margin-right: 10px; right:0px; width:40px; z-index: 999;">x</button>
+							<button id='add-project-4' class='btn btn-primary'
+								style="position:absolute; margin-top: 10px; right:55px; width:40px; z-index: 999;">+</button>
+							<img class="card-img-top project-thumb" src="https://codeportfolio-user-uploads.s3.amazonaws.com/project.png" alt="Card image cap"
+								id="p5" />
+							<div class="card-body card-proj">
+								<h5 class="card-title" contenteditable="true">Project Title</h5>
+								<p class="card-text" contenteditable="true">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna
+									aliqua incididunt ut labore.
+								</p>
+								<span contenteditable="true"><strong>Befunge, FRACTRAN, GolfScript, Piet, Unlambda,
+										Whitespace,
+										Shakespeare</strong></span>
+							</div>
+							<!-- </a> -->
+						</div>
+					</div>
+
+					<button id='add-project-row' class="btn btn-primary" style="position: relative; top: 20px;">Add
+						Row</button>
+
+			</section>
+			<button id='new-section-section-2' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 10px; z-index: 998;'>Add Section</button>
+			<span id='new-span-section-2'
+				style='position: absolute; margin-left: 10px; margin-top: 60px; z-index: 998; background-color: white; border-radius: 5px; padding:10px; display:none'>Select
+				a Section Type:</span>
+			<button id='add-projects-section-2' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 120px; z-index: 998; display:none'>Project</button>
+			<button id='add-showcase-section-2' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 160px; z-index: 998; display:none'>Showcase</button>
+			<button id='add-about-section-2' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 200px; z-index: 998; display:none'>About
+				Me</button>
+			<button id='add-experience-section-2' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 240px; z-index: 998; display:none'>Experience</button>
+			<button id='add-quote-section-2' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 280px; z-index: 998; display:none'>Quotes</button>
+		</div>
+
+		<!-- Career Section -->
+		<div id='block-3'>
+			<button id='remove-section-3' class='btn btn-secondary'
+				style="position:absolute; right:10px; width:40px; margin-top:10px; z-index: 998;">X</button>
+			<button id='up-section-3' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:50px; z-index: 998;">▲</button>
+			<button id='down-section-3' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:90px; z-index: 998;">▼</button>
+			<section id="home-career">
+				<div class="container home-proj-deck">
+					<h1 style='text-align: center' contenteditable="true">Professional Experience</h1>
+					<p style='text-align: center' contenteditable="true">
+						Tell the stories of a couple times you really nailed it. Use numbers in your story to show the
+						value you delivered. Click <a href='https://codeportfolio.io/blog/writing-case-studies'>here</a>
+						for
+						help
+						with this section.
+						<br>
+					<div id='experience-1' class="card my-4 card-no-hover" style="width: 100%;">
+						<button id='remove-experience-1' class='btn btn-secondary'
+							style="position:absolute; margin-top: 10px; margin-right: 10px; right:0px; width:40px; z-index: 999;">x</button>
+						<button id='add-experience-1' class='btn btn-primary'
+							style="position:absolute; margin-top: 10px; right:55px; width:40px; z-index: 999;">+</button>
+						<div class="card-body">
+							<h3 class="card-title" contenteditable="true">Project Title</h3>
+							<h5 contenteditable="true">Company Name</h5>
+							<img src='https://codeportfolio-user-uploads.s3.amazonaws.com/project.png' style='max-height:400px; max-width: 100%'
+								class='float-right ml-3 mb-3' id='p6'>
+							<p class="card-text" contenteditable="true">Lorem ipsum dolor sit amet, consectetur
+								adipiscing
+								elit,
+								sed do eiusmod tempor
+								incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+								aliquip
+								ex ea
+								commodo consequat.
+							</p>
+							<p contenteditable="true">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut
+								labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+								aliquip
+								ex ea
+								commodo consequat.
+							</p>
+							<p contenteditable="true">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut
+								labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+								aliquip
+								ex ea
+								commodo consequat.
+							</p>
+						</div>
+					</div>
+					<div id='experience-2' class="card my-4 card-no-hover" style="width: 100%;">
+						<button id='remove-experience-2' class='btn btn-secondary'
+							style="position:absolute; margin-top: 10px; margin-right: 10px; right:0px; width:40px; z-index: 999;">x</button>
+						<button id='add-experience-2' class='btn btn-primary'
+							style="position:absolute; margin-top: 10px; right:55px; width:40px; z-index: 999;">+</button>
+						<div class="card-body">
+							<h3 class="card-title" contenteditable="true">Project Title</h3>
+							<h5 contenteditable="true">Company Name</h5>
+							<img src='https://codeportfolio-user-uploads.s3.amazonaws.com/project.png' style='max-height:400px; max-width: 100%'
+								class='float-right ml-3 mb-3' id='p7'>
+							<p class="card-text" contenteditable="true">Lorem ipsum dolor sit amet, consectetur
+								adipiscing
+								elit,
+								sed do eiusmod tempor
+								incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+								aliquip
+								ex ea
+								commodo consequat.
+							</p>
+							<p contenteditable="true">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut
+								labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+								aliquip
+								ex ea
+								commodo consequat.
+							</p>
+							<p contenteditable="true">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut
+								labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+								aliquip
+								ex ea
+								commodo consequat.
+							</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div
-				class="card my-4 card-no-hover"
-				style="width: 100%;"
-			>
-				<div class="card-body">
-					<h3 class="card-title">Project Title</h3>
-					<h5>Company Name</h5>
-					<img
-						src='./img/aircraft.jpg'
-						style='max-height:400px; max-width: 100%'
-						class='float-right ml-3 mb-3'
-					>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
-					</p>
-				</div>
-			</div>
+				<button id='new-section-section-3' class='btn btn-primary'
+					style='position: absolute; margin-left: 10px; margin-top: 10px; z-index: 998;'>Add Section</button>
+				<span id='new-span-section-3'
+					style='position: absolute; margin-left: 10px; margin-top: 60px; z-index: 998; background-color: white; border-radius: 5px; padding:10px; display:none'>Select
+					a Section Type:</span>
+				<button id='add-projects-section-3' class='btn btn-primary'
+					style='position: absolute; margin-left: 10px; margin-top: 120px; z-index: 998; display:none'>Project</button>
+				<button id='add-showcase-section-3' class='btn btn-primary'
+					style='position: absolute; margin-left: 10px; margin-top: 160px; z-index: 998; display:none'>Showcase</button>
+				<button id='add-about-section-3' class='btn btn-primary'
+					style='position: absolute; margin-left: 10px; margin-top: 200px; z-index: 998; display:none'>About
+					Me</button>
+				<button id='add-experience-section-3' class='btn btn-primary'
+					style='position: absolute; margin-left: 10px; margin-top: 240px; z-index: 998; display:none'>Experience</button>
+				<button id='add-quote-section-3' class='btn btn-primary'
+					style='position: absolute; margin-left: 10px; margin-top: 280px; z-index: 998; display:none'>Quotes</button>
 		</div>
 
 		<!-- Quotes Carousel -->
-		<div class="container home-proj-deck pb-4">
-			<div class="p-5 bg-white card-shadow">
-				<!-- Bootstrap carousel-->
-				<div
-					class="carousel slide"
-					id="carouselExampleIndicators"
-					data-ride="carousel"
-				>
-					<!-- Bootstrap inner -->
-					<div class="carousel-inner align-middle carousel-height">
-						<!-- Carousel slide (recommendation/quote) #1 -->
-						<div class="carousel-item active">
-							<div class="media-body ml-3">
-								<blockquote class="blockquote border-0 p-0">
-									<p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-dark"></i>Get a
-										quote or two from a past colleague, mentor, or manager. Ideally, these
-										quotes
-										support the claims you made in the professional experience section above. If you
-										have linkedIn endorsements, use those here. Make sure to ask permission
-										and change the link on the linkedIn icon next to the person's name to their
-										actual
-										linkedIn profile. It's much more impactful to have proof that the quotes are
-										coming
-										from a real person.
+		<div id='block-4'>
+			<button id='remove-section-4' class='btn btn-secondary'
+				style="position:absolute; right:10px; width:40px; margin-top:10px; z-index: 998;">X</button>
+			<button id='up-section-4' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:50px; z-index: 998;">▲</button>
+			<button id='down-section-4' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:90px; z-index: 998;">▼</button>
+			<div class="container home-proj-deck pt-4 pb-4">
+				<div class="p-5 bg-white card-shadow">
+					<!-- Bootstrap carousel-->
+					<div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+						<!-- Bootstrap inner -->
+						<div class="carousel-inner align-middle carousel-height">
+							<!-- Carousel slide (recommendation/quote) #1 -->
+							<div class="carousel-item active" id="quote-1">
+								<button id='remove-quote-1' class='btn btn-secondary'
+									style="position:absolute; bottom: 0; margin-right: 10px; right:0px; width:40px; z-index: 999;">x</button>
+								<button id='add-quote-1' class='btn btn-primary'
+									style="position:absolute; bottom: 0; margin-top: 10px; right:55px; width:40px; z-index: 999;">+</button>
+								<div class="media-body ml-3">
+									<blockquote class="blockquote border-0 p-0">
+										<p class="font-italic lead" contenteditable="true"> <i
+												class="fa fa-quote-left mr-3 text-dark"></i>Q1 Get a
+											quote or two from a past colleague, mentor, or manager. Ideally, these
+											quotes
+											support the claims you made in the professional experience section
+											above. If
+											you
+											have linkedIn endorsements, use those here. Make sure to ask permission
+											and change the link on the linkedIn icon next to the person's name to
+											their
+											actual
+											linkedIn profile. It's much more impactful to have proof that the quotes
+											are
+											coming
+											from a real person.
 
-									</p>
-									<footer class="blockquote-footer">Name
-										<cite title="Source Title">Company Name</cite>
-										<a
-											href="https://www.linkedin.com"
-											target="_blank"
-											class="text-dark px-2"
-										>
-											<i class="fab fa-linkedin fa-lg"></i></a>
-									</footer>
-								</blockquote>
+										</p>
+										<footer class="blockquote-footer" contenteditable="true">Name
+											<cite title="Source Title" contenteditable="true">Company Name</cite>
+											<a id='quotes-linkedin-1' href="noaddress" target="_blank"
+												class="text-dark px-2">
+												<i class="fab fa-linkedin fa-lg"></i></a>
+										</footer>
+									</blockquote>
+								</div>
 							</div>
+
+							<!-- Carousel slide (recommendation/quote) #2 -->
+							<div class="carousel-item" id="quote-2">
+								<button id='remove-quote-2' class='btn btn-secondary'
+									style="position:absolute; bottom: 0; margin-right: 10px; right:0px; width:40px; z-index: 999;">x</button>
+								<button id='add-quote-2' class='btn btn-primary'
+									style="position:absolute; bottom: 0; margin-top: 10px; right:55px; width:40px; z-index: 999;">+</button>
+								<div class="media-body ml-3">
+									<blockquote class="blockquote border-0 p-0">
+										<p class="font-italic lead" contenteditable="true"> <i
+												class="fa fa-quote-left mr-3 text-dark"></i>Q2 Get a
+											quote or two from a past colleague, mentor, or manager. Ideally, these
+											quotes
+											support the claims you made in the professional experience section
+											above. If
+											you
+											have linkedIn endorsements, use those here. Make sure to ask permission
+											and change the link on the linkedIn icon next to the person's name to
+											their
+											actual
+											linkedIn profile. It's much more impactful to have proof that the quotes
+											are
+											coming
+											from a real person.
+
+										</p>
+										<footer class="blockquote-footer" contenteditable="true">Name
+											<cite title="Source Title" contenteditable="true">Company Name</cite>
+											<a id='quotes-linkedin-2' href="noaddress" target="_blank"
+												class="text-dark px-2">
+												<i class="fab fa-linkedin fa-lg"></i></a>
+										</footer>
+									</blockquote>
+								</div>
+							</div>
+
+							<!-- Carousel slide (recommendation/quote) #3 -->
+							<div class="carousel-item" id="quote-3">
+								<button id='remove-quote-3' class='btn btn-secondary'
+									style="position:absolute; bottom: 0; margin-right: 10px; right:0px; width:40px; z-index: 999;">x</button>
+								<button id='add-quote-3' class='btn btn-primary'
+									style="position:absolute; bottom: 0; margin-top: 10px; right:55px; width:40px; z-index: 999;">+</button>
+								<div class="media-body ml-3">
+									<blockquote class="blockquote border-0 p-0">
+										<p class="font-italic lead" contenteditable="true"> <i
+												class="fa fa-quote-left mr-3 text-dark"></i>Q3 Get a
+											quote or two from a past colleague, mentor, or manager. Ideally, these
+											quotes
+											support the claims you made in the professional experience section
+											above. If
+											you
+											have linkedIn endorsements, use those here. Make sure to ask permission
+											and change the link on the linkedIn icon next to the person's name to
+											their
+											actual
+											linkedIn profile. It's much more impactful to have proof that the quotes
+											are
+											coming
+											from a real person.
+
+										</p>
+										<footer class="blockquote-footer" contenteditable="true">Name
+											<cite title="Source Title" contenteditable="true">Company Name</cite>
+											<a id='quotes-linkedin-3' href="noaddress" target="_blank"
+												class="text-dark px-2">
+												<i class="fab fa-linkedin fa-lg"></i></a>
+										</footer>
+									</blockquote>
+								</div>
+							</div>
+
 						</div>
 
-						<!-- Carousel slide (recommendation/quote) #2 -->
-						<div class="carousel-item">
-							<div class="media-body ml-3">
-								<blockquote class="blockquote border-0 p-0">
-									<p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-dark"></i>Get a
-										quote or two from a past colleague, mentor, or manager. Ideally, these
-										quotes
-										support the claims you made in the professional experience section above. If you
-										have linkedIn endorsements, use those here. Make sure to ask permission
-										and change the link on the linkedIn icon next to the person's name to their
-										actual
-										linkedIn profile. It's much more impactful to have proof that the quotes are
-										coming
-										from a real person.
-
-									</p>
-									<footer class="blockquote-footer">Name
-										<cite title="Source Title">Company Name</cite>
-										<a
-											href="https://www.linkedin.com"
-											target="_blank"
-											class="text-dark px-2"
-										>
-											<i class="fab fa-linkedin fa-lg"></i></a>
-									</footer>
-								</blockquote>
-							</div>
-						</div>
-
-						<!-- Carousel slide (recommendation/quote) #3 -->
-						<div class="carousel-item">
-							<div class="media-body ml-3">
-								<blockquote class="blockquote border-0 p-0">
-									<p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-dark"></i>Get a
-										quote or two from a past colleague, mentor, or manager. Ideally, these
-										quotes
-										support the claims you made in the professional experience section above. If you
-										have linkedIn endorsements, use those here. Make sure to ask permission
-										and change the link on the linkedIn icon next to the person's name to their
-										actual
-										linkedIn profile. It's much more impactful to have proof that the quotes are
-										coming
-										from a real person.
-
-									</p>
-									<footer class="blockquote-footer">Name
-										<cite title="Source Title">Company Name</cite>
-										<a
-											href="https://www.linkedin.com"
-											target="_blank"
-											class="text-dark px-2"
-										>
-											<i class="fab fa-linkedin fa-lg"></i></a>
-									</footer>
-								</blockquote>
-							</div>
-						</div>
-
+						<!-- Bootstrap controls [dots]-->
+						<a class="carousel-control-prev" style="width: 50px; left: -50px;"
+							href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<i class="fa fa-angle-left text-dark text-lg"></i>
+						</a>
+						<a class="carousel-control-next width-auto" style="width: 50px; right: -50px;"
+							href="#carouselExampleIndicators" role="button" data-slide="next">
+							<i class="fa fa-angle-right text-dark text-lg"></i>
+						</a>
 					</div>
-
-					<!-- Bootstrap controls [dots]-->
-					<a
-						class="carousel-control-prev"
-						style="width: 50px; left: -50px;"
-						href="#carouselExampleIndicators"
-						role="button"
-						data-slide="prev"
-					>
-						<i class="fa fa-angle-left text-dark text-lg"></i>
-					</a>
-					<a
-						class="carousel-control-next width-auto"
-						style="width: 50px; right: -50px;"
-						href="#carouselExampleIndicators"
-						role="button"
-						data-slide="next"
-					>
-						<i class="fa fa-angle-right text-dark text-lg"></i>
-					</a>
 				</div>
 			</div>
+			</section>
+			<button id='new-section-section-4' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 10px; z-index: 998;'>Add Section</button>
+			<span id='new-span-section-4'
+				style='position: absolute; margin-left: 10px; margin-top: 60px; z-index: 998; background-color: white; border-radius: 5px; padding:10px; display:none'>Select
+				a Section Type:</span>
+			<button id='add-projects-section-4' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 120px; z-index: 998; display:none'>Project</button>
+			<button id='add-showcase-section-4' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 160px; z-index: 998; display:none'>Showcase</button>
+			<button id='add-about-section-4' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 200px; z-index: 998; display:none'>About
+				Me</button>
+			<button id='add-experience-section-4' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 240px; z-index: 998; display:none'>Experience</button>
+			<button id='add-quote-section-4' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 280px; z-index: 998; display:none'>Quotes</button>
 		</div>
 
-	</section>
-
-	<!-- About Me/Interests Section -->
-	<div id="home-about">
-		<div class="container home-proj-deck">
-			<h1 style='text-align: center'>About Me</h1>
-			<div
-				class="card card-no-hover"
-				style="width: 100%; margin-top: 20px; margin-bottom: 40px"
-			>
-				<div class="card-body">
-					<img
-						src='./img/Running.jpeg'
-						style='height:400px'
-						class='float-left p-3'
-					>
-					<h3>Interests</h3>
-					Use this section to share your non-coding interests!
-					This stuff can be
-					<a href='https://codeportfolio.io/blog/interests-get-the-gig'>surprisingly helpful</a>
-					in getting the interview.
-					<br>
-					<br>
-					<i class='fas fa-coffee fa-lg text-dark'></i> Interest 1
-					<br><br>
-					<i class='fas fa-plane fa-lg text-dark'></i> Interest 2
-					<br><br>
-					<i class='fa fa-volume-up fa-lg text-dark'></i> Interest 3
-					<br><br>
-					<i class='fas fa-dog fa-anchor text-dark'></i> Interest 4
-					<br><br>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--Footer-->
-	<footer
-		id="main-footer"
-		class="text-center"
-	>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class='text-center'>
-						<br>
-						<!--Change the links below to go to your accounts.-->
-						<a
-							href="https://www.linkedin.com"
-							target='_blank'
-							class="text-white px-2"
-						>
-							<i class="fab fa-linkedin"></i></a>
-						<a
-							href="https://github.com"
-							target='_blank'
-							class="text-white px-2"
-						>
-							<i class="fab fa-github"></i></a>
-						<a
-							href="https://www.instagram.com"
-							target='_blank'
-							class="text-white px-2"
-						>
-							<i class="fab fa-instagram"></i></a>
+		<!-- About Me/nterests Section -->
+		<div id='block-5'>
+			<button id='remove-section-5' class='btn btn-secondary'
+				style="position:absolute; right:10px; width:40px; margin-top:10px; z-index: 998;">X</button>
+			<button id='up-section-5' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:50px; z-index: 998;">▲</button>
+			<button id='down-section-5' class='btn btn-primary'
+				style="position:absolute; right:10px; width:40px; margin-top:90px; z-index: 998;">▼</button>
+			<div id="home-about">
+				<div class="container home-proj-deck">
+					<h1 style='text-align: center' contenteditable="true">About Me</h1>
+					<div class="card card-no-hover" style="width: 100%; margin-top: 20px; margin-bottom: 40px">
+						<div class="card-body">
+							<img src='https://codeportfolio-user-uploads.s3.amazonaws.com/project.png'
+								style='height:400px' class='float-left p-3' id='p8'>
+							<h3 contenteditable="true">Interests</h3>
+							<p contenteditable="true">
+								Use this section to share your non-coding interests!
+								This stuff can be
+								<a href='https://codeportfolio.io/blog/interests-get-the-gig'>surprisingly helpful</a>
+								in getting the interview.
+							</p>
+							<br>
+							<i class='fas fa-coffee fa-lg text-dark'></i> <span contenteditable="true">Interest 1</span>
+							<br><br>
+							<i class='fas fa-plane fa-lg text-dark'></i> <span contenteditable="true">Interest 2</span>
+							<br><br>
+							<i class='fa fa-volume-up fa-lg text-dark'></i> <span contenteditable="true">Interest
+								3</span>
+							<br><br>
+							<i class='fas fa-dog fa-anchor text-dark'></i> <span contenteditable="true">Interest
+								4</span>
+							<br><br>
+						</div>
 					</div>
-					<p> &copy; 2021 </span>(Your Name Here)</p>
 				</div>
 			</div>
+			<button id='new-section-section-5' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 10px; z-index: 998;'>Add Section</button>
+			<span id='new-span-section-5'
+				style='position: absolute; margin-left: 10px; margin-top: 60px; z-index: 998; background-color: white; border-radius: 5px; padding:10px; display:none'>Select
+				a Section Type:</span>
+			<button id='add-projects-section-5' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 120px; z-index: 998; display:none'>Project</button>
+			<button id='add-showcase-section-5' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 160px; z-index: 998; display:none'>Showcase</button>
+			<button id='add-about-section-5' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 200px; z-index: 998; display:none'>About
+				Me</button>
+			<button id='add-experience-section-5' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 240px; z-index: 998; display:none'>Experience</button>
+			<button id='add-quote-section-5' class='btn btn-primary'
+				style='position: absolute; margin-left: 10px; margin-top: 280px; z-index: 998; display:none'>Quotes</button>
 		</div>
-	</footer>
 
-	<script
-		src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"
-	></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-		crossorigin="anonymous"
-	></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-		integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-		crossorigin="anonymous"
-	></script>
+		<!--Footer-->
+		<footer id="main-footer" class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class='text-center'>
+							<br>
+							<!--Change the links below to go to your accounts.-->
+							<a href="#" id='linkedInIconFooter' target='_blank' class="text-white px-2">
+								<i id="linkedin-footer" class="fab fa-linkedin"></i></a>
+							<a href="#" id='githubIconFooter' target='_blank' class="text-white px-2">
+								<i id="github-footer" class="fab fa-github"></i></a>
+						</div>
+						<p id="copyright"> &copy; 2021 <span id='footer-name'>(Your Name Here)</span></p>
+					</div>
+				</div>
+			</div>
+		</footer>
 
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+			integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+			crossorigin="anonymous"></script>
+
+		<script src="editor.js"></script>
 </body>
+
+</div>
 
 </html>

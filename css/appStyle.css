@@ -65,7 +65,7 @@ a:hover {
   position: relative;
   padding-top: 30px;
   min-height: 250px;
-  background: white;
+  background: transparent;
   color: black;
   text-align: center;
 }
@@ -73,15 +73,15 @@ a:hover {
 #home-headshot-text {
   position: relative;
   padding-bottom: 20px;
-  background: white
-  color: #fff;
+  background: transparent;
+  color: black;
   text-align: center;
 }
 
 #home-game {
   position: relative;
   height: 340px;
-  background: #dedede;
+  background: transparent;
   text-align: center;
 }
 
@@ -89,14 +89,14 @@ a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-  background: #dedede;
+  background: transparent;
   text-align: left;
 }
 
 
 #home-music {
   position: relative;
-  background: white;
+  background: transparent;
   text-align: left;
 }
 
@@ -104,14 +104,14 @@ a:hover {
   padding-top: 20px;
   padding-bottom: 0px;
   position: relative;
-  background: white;
+  background: transparent;
   text-align: left;
 }
 
 #project-game {
   position: relative;
   height: 320px;
-  background: white;
+  background: transparent;
   color: black;
   text-align: center;
 }
@@ -120,13 +120,14 @@ a:hover {
   position: relative;
   padding-top: 20px;
   padding-bottom: 1px;
-  background: #dedede;
+  background: transparent;
   color: black;
   text-align: center;
 }
 
 .headshot-img {
   width: 250px;
+  height: 250px;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -172,7 +173,18 @@ a:hover {
 }
 
 .carousel-height{
-  min-height: 250px;
+  /* min-height: 250px; */
+}
+
+sidebar
+{
+    position:fixed;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid #111;
+    z-index: 999;
 }
 
 .home-proj-deck {
@@ -233,7 +245,7 @@ a:hover {
   padding: 0px;
   left: -15px;
   width: 100%;
-  background-color: #dedede;
+  background-color: transparent;
 }
 
 
@@ -248,7 +260,7 @@ a:hover {
   padding-top: 20px;
   padding-bottom: 40px;
   text-align: center;
-  background-color: white;
+  background-color: transparent;
   color: black;
 }
 
@@ -388,6 +400,16 @@ a:hover {
     padding: 0;
     width: 100%;
     left: 0px;
-    background-color: #dedede;
+    background-color: transparent;
   }
+}
+
+.edit-modal{
+  display: none;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999
 }
